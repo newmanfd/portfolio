@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    background-image: linear-gradient(rgba(23, 44, 138, 0.75),
+              rgba(23, 44, 138, 0.75)), url(../images/code.jpg);
+    background-size: cover;
+    background-position: center;
+     
+    height: 100vh;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    font-size: 3.5rem;
+}
+
+h2.project-name {
+    margin-bottom: 15px;
+}
+
+.projects {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+img {
+    width: 100%;
+}
+
+a.btn-view {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2.3px;
+    border: solid #fff 2px;
+    padding: 5px 20px;
+}
+a.btn-view:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* Hamburger Menu */
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    right: 35px;
+    cursor: pointer;
+}
+.btn-line { 
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;  /*between each line */
+    background-color: #fff;
+}
+
+ /* Menu overlay */
+ .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    visibility: hidden;
+ }
+ .show {
+    visibility: visible;
+ }
+ .menu-nav {
+    height: 100vh;
+    overflow: hidden;
+    background-color: lightgrey;
+    list-style: none;
+ }
+ .nav-item-first {
+    margin-top: 150px;
+    text-align: center;
+ }
+ .nav-item {
+    margin-top: 40px;
+    text-align: center;
+ }
+ .nav-link {
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+ }
+ .nav-link:hover {
+    color: black;
+ }
+ 
+
+/* Phones */
+@media screen and (max-width: 499px) {
+    .projects {
+        grid-template-columns: 1fr;
+        margin-top: 60px;
+    }
+    h1 {
+        margin-top: 65px;
+        margin-bottom: 25px;
+    }
+    .menu {
+        width: 75%;
+    }
+}
+
+/* Phones in landscape & tablets */
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .menu {
+        width: 45%;
+    }
+}
+ 
+ 
+ 
+ 
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, 
+                                      maximum-scale=1, user-scalable=0"/>
+        <title>Simple Blog</title>
+        <link rel="stylesheet" href="css/contact-styles.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" 
+                rel="stylesheet"/>
+    </head>
+
+<!-- A simple blog with CSS Flexbox -->
+
+<body>
+    <header> 
+        <nav class="nav-bar"> 
+            <i class="logo">simple blog</i> 
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="" method="POST" id="form">
+        <p>
+            name <br>
+            <input type="text" name="Name"> <br><br>
+        </p>
+        <p>
+            email <br>
+            <input type="email" name="Email"> <br><br>
+        </p>
+        <p>
+            message <br>
+            <textarea name="Message" id="message"></textarea>
+        </p> <br>
+        <div id="charactersLeft">300 characters left available</div> <br><br>
+        <p class="notice"><i>your email will not be shared
+                or spammed.</i></p> <br/>
+            
+         <p>
+            <input type="submit" value="submit">
+         </p>
+    </form>
+
+    <hr class="footer-line"/>
+
+    <footer id="footer">
+        <p id="copy">&copy; Copyright</p>
+    </footer>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #f0f0f0;  
+    font-family: 'Titillium Web', sans-serif;
+    font-size: small;
+    margin: 130px 100px 10px 100px;
+    text-align: center;
+}
+
+header {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+     
+    font-size: 1.5em;
+    height: 80px;
+    background-color: #fff; 
+    position: fixed;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);  
+}
+
+
+/*header menu styles*/
+nav.header-menu ul {
+    list-style-type: none;
+    margin: 0px 5px 0px 5px;
+}
+nav.header-menu ul li {
+    display: inline-block; 
+    color: gray;
+    font-weight: bold; 
+    padding: 10px 10px 10px 10px; 
+    line-height: 60px;
+}
+nav.header-menu ul li a:link, 
+nav.header-menu ul li a:visited {
+    text-decoration: none; 
+    color: gray;
+}
+nav.header-menu ul li a:hover,
+nav.header-menu ul li a:visited:hover,
+nav.header-menu ul li a:active,
+nav.header-menu ul li a:visited:active {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+/*end of header menu styles*/
+
+li, h1, h2, p {
+    letter-spacing: 0.8px; 
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    display: none; 
+}
+
+p {
+    max-width: 800px;
+    font-size: 1.1em;
+}
+p.notice {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+/*form styles*/
+input {
+    border: none;
+    border-radius: 3px;
+}
+input[type="text"],
+input[type="email"] { 
+    width: 300px;
+    height: 20px;
+}
+input[type="submit"] { 
+    border: none;
+    padding: 4px 35px 4px 35px;
+    font-weight: bold;
+    background-color: lightgray;
+    cursor: pointer;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 0.8px; 
+}
+textarea {
+    height: 200px;
+    width: 300px;
+    resize: none;
+    border: none;
+    border-radius: 3px;
+} 
+/*end of form styles*/
+
+form {
+    display: none; 
+}
+
+ 
+hr.footer-line {
+    margin-top: 30px;
+    border: 0px;
+    border-top: 1px solid darkgrey;
+    display: none;
+}
+
+
+/*footer styles*/
+footer {
+    padding: 20px; 
+    text-align: left;
+    display: none; 
+}
+.footer-menu ul {
+    list-style-type: none;
+}
+.footer-menu ul li {
+    text-decoration: none;
+    color: black;
+    padding: 4px 0 4px 0; 
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 0 10px 0;
+}
+.footer-menu ul li a:link,
+.footer-menu ul li a:visited {
+    text-decoration: none;
+    color: black;
+}
+.footer-menu ul li a:hover,
+.footer-menu ul li a:visited:hover,
+.footer-menu ul li a:active,
+.footer-menu ul li a:visited:active {
+    text-decoration: none;
+    cursor: pointer;
+}
+/*end of footer styles*/
+
+
+/*phones and small tablets in portrait*/
+@media screen and (max-width: 770px) {
+    body {
+        margin: 110px 0px 110px 0px;
+    }
+    form {
+        text-align: center;
+    }
+    p {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    nav.header-menu ul {
+        margin: 0px 5px 0px 0px;
+    }
+}
+
+/*mid-size tablets in landscape and small tablet landscapes*/
+@media screen and (min-width: 771px) and (max-width: 895px) {
+    form {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 896px) {
+    form {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+ 
+
+
+ 
+

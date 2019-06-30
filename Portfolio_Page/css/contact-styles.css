@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+}
+
+main.intro {
+    background-image: url(../images/intro.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 5.2rem;
+    line-height: 0.9;
+    margin-bottom: 20px;
+}
+
+.email-box {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2.3px;
+    margin-top: 3rem;
+    border: solid #fff 2px;
+    padding: 5px 20px;
+}
+
+ 
+/* Hamburger Menu */
+.menu-btn {
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    right: 35px;
+    cursor: pointer;
+}
+.btn-line { /* each hamburger line */
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;  /*between each line */
+    background-color: #fff;
+}
+
+ /* Menu overlay */
+ .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%;
+    visibility: hidden;
+ }
+ .show {
+    visibility: visible;
+ }
+ .menu-nav {
+    height: 100vh;
+    overflow: hidden;
+    background-color: lightgrey;
+    list-style: none;
+ }
+ .nav-item-first {
+    margin-top: 150px;
+ }
+ .nav-item {
+    margin-top: 40px;
+ }
+ .nav-link {
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+ }
+ .nav-link:hover {
+    color: black;
+ }
+ 
+
+ /* Phones */
+@media screen and (min-width: 315px) and (max-width: 499px) {
+    .menu {
+        width: 75%;
+    }
+    .email-box {
+        font-size: 1rem;
+    }
+}
+
+/* Large phones & tablets */
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .menu {
+        width: 45%;
+    }
+}
+
+ 
+ 
+

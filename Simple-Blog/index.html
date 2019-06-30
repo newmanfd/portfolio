@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, 
+                                      maximum-scale=1, user-scalable=0"/>
+        <title>Simple Blog</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" 
+                rel="stylesheet">
+    </head>
+
+<!-- A simple blog with CSS Flexbox -->
+
+<body>
+    <header>  
+        <nav class="nav-bar">  
+            <i class="logo">simple blog</i>  
+            <ul>  
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- blog posts -->
+    <section class="column-container">
+       <div class="column"> 
+        <article>
+            <img src="images/blank-image.png" width="480" height="322"/>
+            <h1>Post 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Eligendi asperiores, voluptates, eius nisi optio, nemo...<br/><br/> 
+             <a class="item" href="#"><i class="read-more">READ MORE</i></a></p>
+        </article>
+        <article>
+            <img src="images/blank-image.png" width="480" height="322"/>
+            <h1>Post 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Eligendi asperiores, voluptates, eius nisi optio, nemo...<br/><br/> 
+             <a class="item" href="#"><i class="read-more">READ MORE</i></a></p>
+        </article>
+        <article>
+            <img src="images/blank-image.png" width="480" height="322"/>
+            <h1>Post 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Eligendi asperiores, voluptates, eius nisi optio, nemo...<br/><br/> 
+             <a class="item" href="#"><i class="read-more">READ MORE</i></a></p>
+        </article>
+       </div>
+    
+      <div class="column">
+        <article>
+            <img src="images/blank-image.png" width="480" height="322"/>
+            <h1>Post 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Eligendi asperiores, voluptates, eius nisi optio, nemo...<br/><br/> 
+            <a class="item" href="#"><i class="read-more">READ MORE</i></a></p>
+        </article> 
+        <article>
+            <img src="images/blank-image.png" width="480" height="322"/>
+            <h1>Post 5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Eligendi asperiores, voluptates, eius nisi optio, nemo...<br/><br/> 
+             <a class="item" href="#"><i class="read-more">READ MORE</i></a></p>
+        </article>
+        <article>
+            <img src="images/blank-image.png" width="480" height="322"/>
+            <h1>Post 6</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Eligendi asperiores, voluptates, eius nisi optio, nemo...<br/><br/> 
+             <a class="item" href="#"><i class="read-more">READ MORE</i></a></p>
+        </article>
+      </div>
+    </section>
+    <!-- end of blog posts -->
+
+    <!-- newsletter box -->
+    <div class="newsletter">
+        <h1>sign up for newsletters!</h1> <br/>
+
+        <form action="" method="POST">
+            <p>
+            <b>email</b> <br/>
+            <input type="text" name="email"> <br/><br/>
+            </p>
+
+            <p class="notice">your email will not be shared with anyone or spammed.
+            </p> <br/>
+            
+            <p>
+                <input type="submit" value="sign up">
+            </p>
+        </form>
+    </div>
+    <!-- end of newsletter box -->
+
+    <button id="top-btn">top</button>
+
+    <hr class="footer-line"/>
+
+    <footer id="footer">
+        <p id="copy">&copy; Copyright</p>
+    </footer>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:400,500');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;  
+    background-color: #2C2C2C;
+    box-shadow: 0px 8px 16px #888888;
+}
+header > h1 {
+    font-weight: 400;
+    font-size: 3.5em;
+    margin-left: 5vw;
+    margin-top: 0.8vh;
+    color: grey;
+}
+
+/* Shopping cart header button */
+button#cart-status-btn {
+    top: 25px;
+    right: 8vw;
+    position: absolute;
+    background-color: #2C2C2C;
+    border-style: none;
+    padding: 10px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 0.8em;
+    border: solid 2px rgb(1, 88, 202);
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.2em;
+    color: white;
+}
+button#cart-status-btn:hover {
+    background-color: rgb(1, 88, 202);
+    cursor: pointer;
+}
+
+/* Cart contents drop-down box */
+.cart-contents-box {
+    top: 100px;
+    right: 0;
+    position: absolute;
+    background-color: #eee;
+    border: 1px solid black;
+    border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 25px;
+    width: 35vw;
+    visibility: hidden;
+    color: black;
+}
+.show {
+    visibility: visible;
+}
+.cart-contents-box > p {
+    font-size: 1.3em;
+}
+p#total {
+    font-weight: 500;
+}
+ul#items-list {
+    list-style-type: none;
+}
+li.list-item {
+    text-decoration: none;
+}
+button#remove-item {
+    width: 16px;
+    height: 16px;
+    background: none;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    position: relative;
+
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+svg {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin: -6.5px 0 0 8px;
+    cursor: pointer;  
+}
+#total {
+    margin-top: 10px;
+}
+button#checkout-btn {
+    background-color: rgba(0, 128, 0, 0.5);
+    border-style: none;
+    border-radius: 3px;
+    outline: none;
+    padding: 5px 20px 5px 20px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 1.1em;
+    color: white;
+    cursor: pointer;
+}
+button#clear-cart-btn {
+    background-color: rgba(255, 166, 0, 0.5);
+    border-style: none;
+    border-radius: 3px;
+    outline: none;
+    padding: 5px 20px 5px 20px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 1.1em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Products grid */
+main#page {
+    padding: 200px 40px 200px 40px;  
+}
+
+.products {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item > p,
+.item > h2,
+.item > button {
+    color: black;
+}
+.item {
+    text-align: center;
+    max-height: 350px;
+    margin: 25px;
+}
+img {
+    max-width: 50%;
+    height: auto;  
+}
+
+.item-price {
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+button.add-to-cart {
+    background-color: rgba(1, 88, 202, 0.753);
+    border-style: none;
+    padding: 10px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 1.1em;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+    width: 40%;
+}
+button.add-to-cart:hover {
+   cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 660px) {
+    main#page {
+        padding-top: 120px;
+    }
+    .products {
+        grid-template-columns: 1fr;
+    }
+    header > h1 {
+        font-size: 1.7em;
+        margin-top: 4vh;
+    }
+    button#cart-status-btn {
+        font-size: 0.8em;
+        padding: 5px;
+        right: 3vw;
+        top: 35px;
+    }
+    button.add-to-cart {
+        width: 75%;
+    }
+    .cart-contents-box {
+        width: 100vw;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 661px) and (max-width: 1075px) {
+    main#page {
+        padding-top: 160px;
+    }
+    .products {
+        grid-gap: 40px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    button.add-to-cart {
+        width: 55%;
+    }
+    .cart-contents-box {
+        width: 55vw;
+    }
+}
+
+ 
