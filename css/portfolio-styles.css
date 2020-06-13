@@ -13,7 +13,7 @@ body {
               rgba(23, 44, 138, 0.75)), url(../images/code.jpg);
     background-size: cover;
     background-position: center;
-     
+    background-attachment: fixed;
     height: 100vh;
     padding: 0 20px;
 }
