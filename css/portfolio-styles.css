@@ -33,6 +33,7 @@ h2.project-name {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 45px;
 }
 
 img {
