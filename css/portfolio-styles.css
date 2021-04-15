@@ -36,6 +36,10 @@ h2.project-name {
     margin-bottom: 45px;
 }
 
+div.item {
+    margin-bottom: 30px;
+}
+
 img {
     width: 100%;
 }
